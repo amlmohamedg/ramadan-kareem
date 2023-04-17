@@ -126,15 +126,41 @@ nav .logo:hover {
 .about h2 {
   color:var(--color-gold);
   font-size: 2.5rem;
+  /* animation  */
+  opacity: 0;
+  animation: left 0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .about p {
   font-size: 19px;
   font-weight: bold;
+  /* animation  */
+  opacity: 0;
+  animation: left 0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
-
-
+.video {
+  opacity: 0;
+  animation: right 0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.img_left, .img_fide ,.img_right {
+  /* animation-name: ; */
+  opacity: 0;
+  animation:  0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.img_left {
+  animation-name:left;
+}
+.img_right {
+  animation-name:right;
+}
+.img_fide {
+  animation-name: img;
+}
 /* animation */
 @keyframes left {
   0% {
